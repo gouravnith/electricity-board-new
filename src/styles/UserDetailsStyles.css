@@ -1,0 +1,72 @@
+/* Styling for the user details container */
+.user-details-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Styling for the list of user details */
+  .user-details-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Styling for each item in the list */
+  .user-details-list li {
+    padding: 12px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Last item in the list should not have a border */
+  .user-details-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Bold the label in each list item */
+  .user-details-list li strong {
+    font-weight: 600;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-style: groove;
+    border-color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .user-details-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .user-details-list li {
+      font-size: 14px;
+    }
+  
+    .back-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

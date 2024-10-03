@@ -1,0 +1,56 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #494b4e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    left: 20px;
+}
+
+.logo img {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Center the nav buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-buttons button {
+    background-color: #494b4e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+    color: #eff308;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-buttons button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+}

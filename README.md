@@ -1,70 +1,80 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Electricity Board Management System
 
-## Available Scripts
+This project is a React-based web application developed for electricity board. It allows staff to view, edit, and manage electricity connection requests, complete with data validation and visualized charts.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Grid view for electricity connection requests.
+- Search functionality.
+- Add/Edit/Delete users (with restrictions).
+- Data validation (e.g., load applied limit, uneditable fields).
+- Charts to visualize connection request statuses (pending, approved, etc.).
+- Local storage for data persistence.
+- React router for routing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Projct Structure
+my-electricity-app/
+├── public/
+│   ├── index.html                  # Main HTML file, entry point for the app
+│   ├── manifest.json               # Metadata for Progressive Web Apps (optional)
+│   ├── favicon.ico                 # Favicon for the app
+│   └── images                      # images
+│        └── logo.png               # logo
+│
+├── src/
+│   ├── components/                 # Reusable UI components
+│   │   ├── AddUserForm.jsx         # Component 1: Form for adding new connections
+│   │   ├── Dashboard.jsx           # Component 2: Chart displaying connection statuses
+│   │   ├── DateFilter.jsx          # Component 3: For filtering user connections on basis of end and start date
+│   │   ├── EditUserForm.jsx        # Component 4: For editting info of existing users
+│   │   ├── UserList.jsx            # Component 5: Displays all the users of the board
+│   │   ├── UserDetails.jsx         # Component 6: It shows the details about specific user with id in url
+│   │   └── Header.jsx              # Component 7: Header for all pages
+│   ├── styles/                     # Stylesheets for components
+│   │   ├── AddUserForm.css         
+│   │   ├── Dashboard.css           
+│   │   ├── DateFilter.css          
+│   │   ├── EditUserForm.css        
+│   │   ├── UserList.css            
+│   │   ├── UserDetails.css         
+│   │   └── Header.css
+│   ├── App.js                      # Main app component
+│   ├── index.js                    # Entry point of the React app
+│   └── reportWebVitals.js          # Performance reporting (optional)
+│
+├── .gitignore                      # Files to be ignored by Git
+├── package.json                    # Project dependencies and scripts
+├── package-lock.json               # Locks versions of project dependencies
+└── README.md                       # Project documentation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before running the project, ensure you have the following installed:
 
-### `npm run build`
+- **Node.js** (>= v14)
+- **npm** (Comes with Node.js)
+- **Git** (for version control)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# After cloning navigate to project directory
+cd electricity-board-management
 
-### `npm run eject`
+# Install all the packages by below command
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# For using charts
+npm i recharts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# now start the application at local server
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# url
+http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
