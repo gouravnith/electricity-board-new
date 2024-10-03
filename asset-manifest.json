@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/electricity-board-new/static/css/main.e3dbd5b3.css",
-    "main.js": "/electricity-board-new/static/js/main.ee28e318.js",
+    "main.js": "/electricity-board-new/static/js/main.68f1755b.js",
     "static/js/453.978f7335.chunk.js": "/electricity-board-new/static/js/453.978f7335.chunk.js",
     "index.html": "/electricity-board-new/index.html",
     "main.e3dbd5b3.css.map": "/electricity-board-new/static/css/main.e3dbd5b3.css.map",
-    "main.ee28e318.js.map": "/electricity-board-new/static/js/main.ee28e318.js.map",
+    "main.68f1755b.js.map": "/electricity-board-new/static/js/main.68f1755b.js.map",
     "453.978f7335.chunk.js.map": "/electricity-board-new/static/js/453.978f7335.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3dbd5b3.css",
-    "static/js/main.ee28e318.js"
+    "static/js/main.68f1755b.js"
   ]
 }
